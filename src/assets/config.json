@@ -1,0 +1,4 @@
+{
+  "baseUrl": "https://www.boardgamegeek.com/xmlapi2",
+  "hotnessEndpoint": "/hot?TYPE=boardgame"
+}

@@ -1,0 +1,28 @@
+.linen {
+  min-height: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12% 0 16px;
+  transition: padding .5s;
+  font-size: 18px;
+}
+
+.linen.hero-small {
+  padding: 2px 0;
+}
+
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 48px;
+  transition: font-size .5s;
+  line-height: 1;
+}
+
+.hero-small h1 {
+  font-size: 24px;
+}

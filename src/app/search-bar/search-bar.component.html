@@ -1,0 +1,9 @@
+<!-- GameHub and SearchBar -->
+<div [className]="home ? 'hero linen hero-large': 'hero linen hero-small'">
+  <header>
+    <h1>Game Hub</h1>
+  </header>
+  <app-game-form [home]="home">
+  </app-game-form>
+  <router-outlet name="hotOutlet" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)" ></router-outlet>
+</div>

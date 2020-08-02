@@ -1,0 +1,70 @@
+.fa-search, #search-input {
+  font-size: 18px
+}
+
+input#search-input {
+  max-width: 150px;
+  border-style: inset;
+  border-color: rgb(230, 222, 222);
+  border-width: 2px;
+  border-radius: 5px;
+  line-height: 1;
+  padding: 2px;
+  margin: 0 5px 5px;
+  outline: none;
+  width: 150px;
+  transition: width .5s;
+}
+
+.small-search input#search-input {
+  max-width: initial;
+  width: 200px;
+}
+
+.search-form button {
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(230, 222, 222);
+  border-radius: 5px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.large-search .button-group {
+  display: inline;
+}
+
+.large-search button span {
+  display: none;
+}
+
+.small-search button svg {
+  display: none;
+}
+
+.hotness-button {
+  display: inline-block;  
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(230, 222, 222);
+  border-radius: 5px;
+  padding: 0;
+  font-size: 18px;
+  padding: 5px 6px;
+  color: black;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.search-form button div {
+  padding: 3.4px 6px;
+}
+
+.large-search .search-label {
+  display: initial;
+  transition: display .5s;
+}
+
+.small-search .search-label {
+  display: none;
+}

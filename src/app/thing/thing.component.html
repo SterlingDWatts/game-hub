@@ -1,0 +1,21 @@
+<section class="thing">
+  <header>
+    <h2>{{ thing.name }}</h2>
+  </header>
+  <div class="picture-and-stats">
+    <img src="{{ thing.picture }}" alt="{{ thing.name }}" />
+    <div class="stats">
+      <div class="trait">{{ thing.usersRated }} Ratings</div>
+      <div class="trait">Rank: {{ thing.rank }}</div>
+      <div class="trait">Rating: </div>
+    </div>
+    <div class="age-playtime-players">
+      <div class="trait">Age: {{ thing.minAge }}+</div>          
+      <div class="trait">{{ thing.minPlayTime }}-{{ thing.maxPlayTime }} Mins</div>        
+      <div class="trait">{{ thing.minPlayers }}-{{ thing.maxPlayers }} Players</div>          
+    </div>
+  </div>
+  <div *ngFor="let paragraph of thing.description" >
+    <p>{{ paragraph }}</p>
+  </div>
+</section>

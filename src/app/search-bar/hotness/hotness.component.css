@@ -1,0 +1,29 @@
+.hotness h2 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 24px;
+}
+
+.hotness__list-item {
+  padding: .5em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotness__list-item .game-info {
+  width: calc(100% - 88px);
+}
+
+.hotness__list-item a.game-name {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-decoration: none;
+  color: rgba(26, 36, 176);
+}
+
+.hotness__list-item a.year-and-rank {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,22 @@
+<section class="hotness">
+  <h2>The Hotness</h2>
+  <ul>
+    <li class="hotness__list-item" *ngFor="let game of hotnessList">
+      <a [routerLink]="['/thing/', game.id]">
+        <img src="{{ game.thumb }}" width="80" alt="{{ game.name }}"
+      /></a>
+      <div class="game-info">
+        <a [routerLink]="['/thing/', game.id]" class="game-name"
+          ><h3>{{ game.name }}</h3></a
+        >
+        <a [routerLink]="['/thing/', game.id]" class="year-and-rank"
+          ><div>
+            <time>{{ game.yearPublished }}</time>
+            {{ " | " }}
+            <span>Rank: {{ game.rank }}</span>
+          </div></a
+        >
+      </div>
+    </li>
+  </ul>
+</section>

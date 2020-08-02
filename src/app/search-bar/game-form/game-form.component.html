@@ -1,0 +1,29 @@
+<form
+  [formGroup]="gameForm"
+  [className]="home ? 'large-search search-form' : 'small-search search-form'"
+>
+  <fieldset>
+    <label for="search-input" class="search-label">
+      Game
+    </label>
+    <input
+      id="search-input"
+      name="search-input"
+      class="cardboard"
+      type="search"
+      formControlName="gameName"
+      placeholder="example: Risk"
+    />
+    <div class="button-group">
+      <button type="submit" class="cardboard">
+        <div>
+          <i class="fal fa-search"></i>
+          <span>Search</span>
+        </div>
+      </button>
+      <a [hidden]="home" href="/hotness"
+        ><div class="hotness-button cardboard">The Hotness</div></a
+      >
+    </div>
+  </fieldset>
+</form>
